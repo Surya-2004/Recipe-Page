@@ -5,7 +5,7 @@
 }
 .box{
     background-color: hsl(330, 100%, 98%);
-    width: 900px;
+    width: 800px;
     height: auto;
     margin-top: 5vw;
     margin-bottom: 5vw;
@@ -39,7 +39,7 @@ p{
 .preparation-time{
     font-family: 'outfit';
     border-radius: 10px;
-    width: 850px;
+    width: 750px;
     height: 140px;
     margin: 25px;
     background-color: hsla(185, 97%, 88%, 0.5);
@@ -60,7 +60,7 @@ p{
 }
 
 .image > img{
-    width: 850px;
+    width: 750px;
     border-radius: 10px;
     margin: 26px 26px;
     position: relative;
@@ -103,7 +103,7 @@ h3,b,p,li{
     
 }
 
-h2{
+h1{
     color: hsl(24, 5%, 18%);
     font-weight: 200;
     margin: 10px 0px;
