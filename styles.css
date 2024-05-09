@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+*{
+    margin: 0px;
+}
 .box{
     background-color: hsl(330, 100%, 98%);
-    width: 400px;
+    width: 900px;
     height: auto;
-    margin-top: 10vw;
-    margin-bottom: 10vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
     box-sizing: border-box;
     border-radius: 10px;
     position: relative;
@@ -14,12 +17,17 @@
 body{
     font-size: 16px;
     background-color: hsl(30, 54%, 90%);
-    display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'young serif';
     font-weight: 400;
     position: relative;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 p{
@@ -30,20 +38,19 @@ p{
 
 .preparation-time{
     font-family: 'outfit';
-    position: relative;
     border-radius: 10px;
-    width: 350px;
-    height: 130px;
-    margin-left: 25px;
-    margin-right: 25px;
+    width: 850px;
+    height: 140px;
+    margin: 25px;
     background-color: hsla(185, 97%, 88%, 0.5);
 } 
 
-.preparation-time  p{
+.preparation-time  h4{
+    margin: 10px 0px;
     padding-left: 20px;
     font-weight: 600;
     position: relative;
-    color: rgb(42, 81, 115);
+    color: hsl(332, 51%, 32%);
 }
 
 .preparation-time li{
@@ -53,12 +60,9 @@ p{
 }
 
 .image > img{
-    width: 350px;
-    height: 155px;
+    width: 850px;
     border-radius: 10px;
-    margin-left: 26px;
-    margin-right: 26px;
-    margin-top: 26px;
+    margin: 26px 26px;
     position: relative;
 }
 
@@ -68,6 +72,7 @@ p{
 
 .Ingredients{
     position: relative;
+    margin: 25px 25px;
 }
 
 .Ingredients li{
@@ -79,9 +84,14 @@ p{
     padding-right: 15px;
 }
 
+.Instructions{
+    margin: 25px 25px;
+}
+
 li{
     font-family: 'outfit';
     font-weight: 400;
+    margin: 10px 0px;
 }
 
 ol li::marker{
@@ -96,11 +106,53 @@ h3,b,p,li{
 h2{
     color: hsl(24, 5%, 18%);
     font-weight: 200;
+    margin: 10px 0px;
 }
 
 hr{
     margin-left: 10px;
     margin-right: 10px;
+    border: 1px solid rgb(188, 212, 212);
 }
 
-  
+td{
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+}
+
+
+/* .table p{
+    display: inline;
+} */
+
+.table div{
+    width: 100%;
+    display: flex;
+    margin: 10px 0px;
+}
+.table div p{
+    flex: 1;
+    margin-left: 15px;
+}
+.right-p{
+    font-weight: 700;
+}
+.Nutrition{
+    margin: 25px 25px;
+}
+@media screen and (max-width: 850px){
+    .image > img{
+        width: 100%;
+        margin: 0px;
+        border-radius: 0px;
+    }
+    .box{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .preparation-time{
+        width: 90%;
+    }
+}
